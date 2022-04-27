@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+    <link rel="stylesheet" href="output.css" />
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <ul class="navbar" id="navbar">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='history.html'>History</a></li>
+        <li><a href='readings.html'>Readings</a></li>
+        <li><a href='meanings.html'>Meanings</a></li>
+    </ul>
+
+    <!--Header and banner contents-->
+    <div class="banner-container">
+        <img src="banner.jpg" class="banner"  alt="Banner image containing tarot cards" />
+        <h1 class="header">Tarot Card Readings</h1>
+    </div>
+
+    <!--Main section of output display-->
+    <div id="main-container" class="main-container">
+
+        <!--Modal contents section, allow image to display infront of other page contents: https://www.w3schools.com/howto/howto_css_modal_images.asp-->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="imgModal" />
+            <div id="caption"></div>
+        </div>
+
+
+        <div id="output">
+            <header id="cardName"></header>
+            <!--Flip image section: https://www.w3schools.com/howto/howto_css_flip_box.asp -->
+            <div class="flip-card">
+                <div class="flip-inner" id="flip-inner">
+                    <!--Holds back image of card-->
+                    <div class="card-back">
+                        <img src="./cardImages/cardBack.jpg" width="200" />
+                    </div>
+                    <!--Holds selected tarot card-->
+                    <div class="card-front" id="card-front">
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Output text about Card selected-->
+            <div id="mainOutput" class="mainOutput"></div>
+            <h3>Love</h3>
+            <div id="love" class="love"></div>
+            <h3>Career</h3>
+            <div id="career" class="career"></div>
+        </div>
+
+        <!--Navigation to start of quiz-->
+        <div class="navigation">
+            <a href="Que_1.html" id="restartBtn">Restart</a>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer>
+        <p>Author: 40482534</p>
+    </footer>
+    <script src="output.js"></script>
+</body>
+</html>

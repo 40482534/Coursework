@@ -1,0 +1,180 @@
+﻿/*style the nativation bar*/
+.navbar {
+    list-style: none;
+    margin: 0;
+    background: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    color: white;
+}
+
+/*Allows navigation bar to be responsive, adjusts the layout of links*/
+@media all and (max-width :800px) {
+    .navbar {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navbar {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .navbar li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+/*Styling for navigation bar to remain at the top of the page: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/*Sets colour of Body of the page*/
+body {
+    background-color: #F5F2EE;
+}
+
+/*Styles container for header and banner*/
+.banner-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*Styles the banner image sizes and brightness to allow easy reading of the Page Header*/
+.banner {
+    width: 100%;
+    height: 200px;
+    filter: brightness(85%);
+}
+
+/*Styles header text*/
+.header {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+/*Styling of main container elements on window*/
+.main-container {
+    margin: 10px;
+}
+
+/*Styling of the Buttons moving through the quiz*/
+.navigation a {
+    background-color: #8a2222;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/*Allows for interactivity when hoverning over links*/
+a:hover {
+    background-color: #c4a3a3;
+}
+
+/*style taror image*/
+.tarot_img {
+    float: right;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    filter: brightness(80%);
+    margin-bottom: 20px;
+}
+
+/*Style position of tarot image*/
+.row {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+    text-align: center;
+}
+
+/*Style content section*/
+.content {
+    position: absolute;
+    width: 400px;
+}
+
+article {
+    margin: 30px;
+}
+
+/*styling size of header on home page*/
+.home-header {
+    font-size: 50px;
+}
+
+h2{
+    margin: 20px;
+}
+
+/*Style history text*/
+.history, #reading{
+    display:block;
+    margin: 20px;
+}
+
+/*styling history image*/
+.history-img-1 {
+    float: right;
+    display: inline;
+    margin: 20px;
+}
+
+/*styling history image*/
+.history-img-2 {
+    float: left;
+    display: inline;
+    margin: 10px;
+}
+
+/*styling figure captions on history page*/
+figcaption{
+    text-align: center;
+}
+
+/*styling reading page image*/
+.reading_img {
+    float: right;
+    margin: 20px;
+}
+
+/*Styling footer colours and layout*/
+footer {
+    background-color: #c4a3a3;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 10px;
+}

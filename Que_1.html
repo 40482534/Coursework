@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz - Question 1</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <ul class="navbar" id="navbar">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='history.html'>History</a></li>
+        <li><a href='readings.html'>Readings</a></li>
+        <li><a href='meanings.html'>Meanings</a></li>
+    </ul>
+
+    <!--Header and banner contents-->
+    <div class="banner-container">
+        <img  src="banner.jpg" class="banner" alt="Banner image containing tarot cards" />
+        <h1 class="header">Tarot Card Readings</h1>
+    </div>
+
+    <!--Main Question and answers section-->
+    <div id="main-container" class="main-container 0">
+        <!--Progress Bar section: https://www.w3schools.com/howto/howto_js_progressbar.asp -->
+        <div id="progress">
+            <div id="bar"></div>
+        </div>
+        <img src="./Images/zodiac.jpg" width="350" class="question_img" alt="Zodiac signs image" />
+
+        <!--Question and answer section appended from JavaScript-->
+        <div id="questions" class="questions"></div>
+        <div id="answers" class="answers"></div>
+
+        <!--Navigation between pages-->
+        <div class="navigation">
+            <a href='Que_2.html' id="next">Next</a>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer>
+        <p>Author: 40482534</p>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>

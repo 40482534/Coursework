@@ -1,0 +1,220 @@
+﻿/*style the nativation bar*/
+.navbar {
+    list-style: none;
+    margin: 0;
+    background: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    color: white;
+}
+
+/*Allows navigation bar to be responsive, adjusts the layout of links*/
+@media all and (max-width :800px) {
+    .navbar {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navbar {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .navbar li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+/*Styling for navigation bar to remain at the top of the page: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/*Sets colour of Body of the page*/
+body {
+    background-color: #F5F2EE;
+}
+
+/*Styles container for header and banner*/
+.banner-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*Styles the banner image sizes and brightness to allow easy reading of the Page Header*/
+.banner {
+    width: 100%;
+    height: 200px;
+    filter: brightness(85%);
+}
+
+/*Styles header text*/
+.header {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+/*Styling of main container elements on window*/
+.main-container {
+    text-align: center;
+}
+
+/*Styling of the Buttons moving through the quiz pages*/
+.navigation a {
+    background-color: #8a2222;
+    color: white;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*Allows for interactivity when hoverning over links*/
+a:hover {
+    background-color: #c4a3a3;
+}
+
+
+/*Styles card image width*/
+.cardImage {
+    width: 200px;
+
+}
+
+/*Sets value for container holding the modal contents (setting the size and background opacity): https://www.w3schools.com/howto/howto_css_modal_images.asp*/
+.modal {
+    display:none;
+    position:fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6)
+}
+
+/*Arranging contents of modal container */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    display: block;
+    width: 300px;
+    max-width: 700px;
+}
+
+/*Styling caption for modal Image*/
+#caption {
+    color: white;
+    font-size: 30px;
+}
+
+/*Style closing button of modal contents*/
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Allow responsiveness of contents of modal container*/
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*Styling layout of output details for selected card*/
+#output {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+/*Allow for positioning and sizing of flip section: https://www.w3schools.com/howto/howto_css_flip_box.asp */
+.flip-card {
+    width: 200px;
+    height: 350px;
+    perspective: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/*Position the image sides together*/
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/*Position the sides*/
+.card-back, .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/*Style the front card*/
+.card-front{
+    transform: rotateY(180deg);
+}
+
+/*Style the restart button*/
+#restartBtn{
+    font-size: 20px
+}
+
+/*Styling footer colours and layout*/
+footer {
+    background-color: #c4a3a3;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 10px;
+
+}
